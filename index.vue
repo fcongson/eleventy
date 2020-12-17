@@ -5,16 +5,18 @@
       <title>Demo: Vue and Eleventy</title>
     </head>
     <body>
-      <p>Hello from Vue.</p>
-      <p>Hello from Eleventy.</p>
+      <room-with-a />
     </body>
   </html>
 </template>
 <script>
+import roomWithA from "./_includes/room-with-a.vue";
 export default {
   data: {
     layout: "layout.html",
   },
-  components: {},
+  components: {
+    roomWithA,
+  },
 };
 </script>
