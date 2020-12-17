@@ -3,6 +3,7 @@
     <head>
       <meta charset="utf-8" />
       <title>Demo: Vue and Eleventy</title>
+      <style v-html="css" />
     </head>
     <body>
       <room-with-a />
@@ -17,6 +18,11 @@ export default {
   },
   components: {
     roomWithA,
+  },
+  computed: {
+    css: function() {
+      return this.getVueComponentCssForPage(this.page.url);
+    },
   },
 };
 </script>
