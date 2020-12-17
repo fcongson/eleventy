@@ -12,6 +12,9 @@
 </template>
 <script>
 export default {
+  data: {
+    layout: "layout.html",
+  },
   components: {},
 };
 </script>
